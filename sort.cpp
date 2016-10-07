@@ -26,3 +26,12 @@ void bubble_sort(int* arr, int size){
   }
 }
 
+void insertion_sort(int* arr, int size){
+  for (int i=1;i<size;i++){
+    for (int j=0;j<i;j++){
+      if (arr[j]>arr[i]){
+	insert(arr, i, j);
+      }
+    }
+  }
+}
