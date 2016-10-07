@@ -1,7 +1,7 @@
 CXX=g++
 
-main : main.o sort.o
-	${CXX} main.o sort.o -o main
+main : main.o sort.o testFuncs.o
+	${CXX} main.o sort.o testFuncs.o -o main
 
 clean : 
-	-rm main *.o
+	-rm -f main *.o *~

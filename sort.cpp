@@ -35,3 +35,18 @@ void insertion_sort(int* arr, int size){
     }
   }
 }
+
+void selection_sort(int* arr, int size){
+  int minIndex, minValue;
+  for (int i=0;i<size-1;i++){
+    minIndex = i;
+    minValue = arr[i];
+    for (int j=1+i;j<size;j++){
+      if (arr[j]<minValue){
+	minIndex = j;
+	minValue = arr[j];
+      }
+    }
+    insert(arr, minIndex, i);
+  }
+}
