@@ -8,6 +8,9 @@ void bubble_sort(int* arr, int size);
 void insertion_sort(int* arr, int size);
 void selection_sort(int* arr, int size);
 
+void fix_heap(int* arr, int size, int index);
+void heapify(int* arr, int size);
+
 void heap_sort(int* arr, int size);
 void merge_sort(int* arr, int size);
 void quick_sort(int* arr, int size);

@@ -12,5 +12,8 @@ int main(){
   test_sort(&bubble_sort, "Bubble Sort", NUM_ELEMENTS, MAX_RAND_NUM);
   test_sort(&insertion_sort, "Insertion Sort", NUM_ELEMENTS, MAX_RAND_NUM);
   test_sort(&selection_sort, "Selection Sort", NUM_ELEMENTS, MAX_RAND_NUM);
+  test_sort(&merge_sort, "Merge Sort", NUM_ELEMENTS, MAX_RAND_NUM);
+  test_heap(&heapify, "Heapify", NUM_ELEMENTS, MAX_RAND_NUM);
+  test_sort(&heap_sort, "Heap Sort", NUM_ELEMENTS, MAX_RAND_NUM);
 }
 
